@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🚀 Painel de Atalhos - HalexistarService
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao **Painel de Atalhos**, um projeto desenvolvido com foco na produtividade e na organização corporativa. Esta aplicação tem como objetivo centralizar e facilitar o acesso a sistemas e serviços usados no dia a dia da empresa.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧩 Visão Geral
 
-### `npm start`
+Este painel foi construído com **React** e utiliza **React Router DOM** para uma navegação moderna, fluida e acessível. Cada link é representado visualmente com ícones, e a interface é projetada para funcionar com leitores de tela (NVDA, por exemplo).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Funcionalidades
 
-### `npm test`
+- 🔗 Acesso rápido aos **Sistemas internos** e **Serviços externos** da empresa.
+- 📚 Categorias organizadas por grupos para facilitar a navegação.
+- 🧑‍🦯 Acessibilidade com foco em navegação por teclado e leitores de tela.
+- 🖼️ Ícones visuais para identificação rápida dos serviços.
+- 🧭 Responsivo e leve.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://reactjs.org/)
+- [React Router DOM](https://reactrouter.com/)
+- CSS Modularizado
+- Acessibilidade com ARIA e `tabIndex`
+- Ícones com [Icons8](https://icons8.com/) e SVGs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🗂️ Estrutura do Projeto
 
-### `npm run eject`
+```
+src/
+├── components/
+│   └── ItemLink.jsx
+├── data/
+│   └── linksData.js
+├── pages/
+│   └── Home.jsx
+├── App.jsx
+└── index.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧪 Como Executar Localmente
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/jonathaneduardodeoliveira/Halexistar   cd nome-do-repo
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Inicie o projeto:
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 💼 Propósito Empresarial
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este painel foi criado com foco na **eficiência de times corporativos**. Ao invés de memorizar diversos links ou depender de favoritos, os colaboradores contam com uma interface rápida, clara e responsiva para acessar tudo o que precisam.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧑‍💻 Desenvolvedor
 
-### Making a Progressive Web App
+**Jonathan Eduardo de Oliveira**  
+[LinkedIn](https://www.linkedin.com/in/JonathanEduardoDeOliveira//) | [GitHub](https://github.com/jonathaneduardodeoliveira)  
+*Programador Full Stack com foco em acessibilidade e produtividade.*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a [MIT License](LICENSE).

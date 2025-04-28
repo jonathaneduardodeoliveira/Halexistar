@@ -4,25 +4,33 @@ import ItemLink from "../../components/ItemLink";
 import { sistemas, servicos } from "../../data/linksData";
 
 export default function Home() {
-  const h1Ref = useRef(null);
+  const sistemasRef = useRef(null);
 
   useEffect(() => {
-    if (h1Ref.current) {
-      h1Ref.current.focus();
+    if (sistemasRef.current) {
+      sistemasRef.current.focus();
     }
   }, []);
 
   return (
     <aside className="menu-lateral" role="navigation" aria-label="Menu principal">
-      <div className="painel-header">
-        <h1 ref={h1Ref} tabIndex="-1">Bem-vindo ao Painel</h1>
-        <h2>HalexistarService</h2>
-        <p>Escolha um dos sistemas ou serviços abaixo para começar.</p>
+      <div className="logo">
+        <img
+          src={`${process.env.PUBLIC_URL}/halexistar.jpg`}
+          alt="Logo Halexistar"
+          className="logo-img"
+        />
       </div>
 
       <section className="menu-secao">
-        <h3>📚 Sistemas</h3>
-        <nav className="menu-grid-4col">
+        <h3
+          ref={sistemasRef}
+          tabIndex="-1"
+          aria-label="Sistemas disponíveis"
+        >
+          📚 Sistemas
+        </h3>
+        <nav className="menu-grid-3col">
           {sistemas.flat().map((item, idx) => (
             <ItemLink key={idx} nome={item.nome} icone={item.icone} link={item.link} />
           ))}
@@ -31,7 +39,7 @@ export default function Home() {
 
       <section className="menu-secao">
         <h3>🔗 Serviços</h3>
-        <nav className="menu-grid-4col">
+        <nav className="menu-grid-3col">
           {servicos.map((item, idx) => (
             <ItemLink key={idx} nome={item.nome} icone={item.icone} link={item.link} />
           ))}

@@ -9,8 +9,8 @@ body {
   background-color: #f2f2f2;
   color: #333;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column; /* agora vertical */
+  align-items: center; /* centraliza no meio horizontal */
   min-height: 100vh;
   padding: 2rem;
 }
@@ -22,17 +22,27 @@ body {
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem; /* espaçamento após logo */
 }
 
+/* Novo bloco para logo */
 .logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 1rem;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
+.logo-img {
+  width: 200px; /* tamanho horizontal maior */
+  max-width: 90%;
+  height: auto;
+  border-radius: 16px; /* cantos arredondados */
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Tipografia */
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -51,6 +61,7 @@ p {
   text-align: center;
 }
 
+/* Botões */
 button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -78,31 +89,47 @@ button:hover {
   padding-bottom: 0.5rem;
 }
 
-/* Grade com colunas para os links */
-.menu-grid-4col {
+/* Grade para links */
+.menu-grid-3col {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-/* Estilização para os cards de sistemas/serviços */
-.menu-grid-4col a {
+/* Cards dos sistemas/serviços */
+.menu-grid-3col a {
   display: block;
-  padding: 1rem;
-  background-color: #e9f3ff;
-  border-radius: 12px;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #ffffff, #d8d8d8);
+  border-radius: 16px;
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
   text-align: center;
-  transition: background-color 0.3s ease;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.15), -8px -8px 20px rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
 }
 
-.menu-grid-4col a:hover {
-  background-color: #d0e7ff;
+.menu-grid-3col a:hover {
+  background: linear-gradient(145deg, #d0e7ff, #ffffff);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 25px rgba(0,0,0,0.2), -10px -10px 25px rgba(255,255,255,0.8);
 }
 
-/* Responsivo */
+/* Responsividade */
+@media (min-width: 600px) {
+  .menu-grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .menu-grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 2.5rem;

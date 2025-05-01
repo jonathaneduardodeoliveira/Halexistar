@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Halexistar/static/css/main.e0cf134f.css",
-    "main.js": "/Halexistar/static/js/main.10cae4c7.js",
+    "main.js": "/Halexistar/static/js/main.c9affc79.js",
     "static/js/453.0c69cf18.chunk.js": "/Halexistar/static/js/453.0c69cf18.chunk.js",
     "index.html": "/Halexistar/index.html",
     "main.e0cf134f.css.map": "/Halexistar/static/css/main.e0cf134f.css.map",
-    "main.10cae4c7.js.map": "/Halexistar/static/js/main.10cae4c7.js.map",
+    "main.c9affc79.js.map": "/Halexistar/static/js/main.c9affc79.js.map",
     "453.0c69cf18.chunk.js.map": "/Halexistar/static/js/453.0c69cf18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0cf134f.css",
-    "static/js/main.10cae4c7.js"
+    "static/js/main.c9affc79.js"
   ]
 }
